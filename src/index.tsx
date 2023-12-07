@@ -119,6 +119,7 @@ export default function useDrivePicker(): [
     setSelectFolderEnabled,
     disableDefaultView = false,
     setDocsViewModeAsList = false,
+    mineOnly = false,
     callbackFunction,
   }: PickerConfiguration) => {
     if (disabled) return false
@@ -156,6 +157,10 @@ export default function useDrivePicker(): [
 
     if (multiselect) {
       picker.enableFeature(google.picker.Feature.MULTISELECT_ENABLED)
+    }
+
+    if (mineOnly) {
+      picker.enableFeature(google.picker.Feature.MINE_ONLY)
     }
 
     if (showUploadView) picker.addView(uploadView)

@@ -87,7 +87,7 @@ export default App;
 | customScopes      |string[]|    ['https://www.googleapis.com/auth/drive.readonly']     |  Array of custom scopes you want to add to the picker|
 | locale           |string    |    en            | List of supported locales https://developers.google.com/picker/docs#i18n|
 | setDocsViewModeAsList|boolean|    optional     | Set view mode as DocsViewMode.LIST|
-
+| mineOnly         |boolean   |    optional      | Enable mine only feature      |
 
   ## viewId options
 |    option            |         description             |

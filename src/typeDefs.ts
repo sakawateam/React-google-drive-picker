@@ -67,6 +67,7 @@ export type PickerConfiguration = {
   locale?: string
   customScopes?: string[]
   setDocsViewModeAsList?: boolean
+  mineOnly?: boolean
   callbackFunction: (data: PickerCallback) => any
 }
 
